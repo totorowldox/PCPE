@@ -17,7 +17,7 @@ namespace PCPE.Module
             world.Routine<Note, Transform, JudgeLine>()
                 .Kind(Ecs.PreUpdate)
                 .TermAt(3).Parent()
-                .Cascade().MultiThreaded()
+                .Cascade()
                 .Each((Entity e, ref Note note, ref Transform transform, ref JudgeLine line) =>
                 {
                     if ((float)GamePlay.Instance.CurrentTime >= note.NoteData.endTimeSeconds)
