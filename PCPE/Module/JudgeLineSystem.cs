@@ -70,7 +70,7 @@ namespace PCPE.Module
             // }
             // else
             // {
-            transform.LocalPosition = new Vector2((x) * 1600, (-y) * 900);
+            transform.LocalPosition = new Vector2((-x) * 1600, (-y) * 900);
             // UIMove = MoveEventValue;
             // }
 
